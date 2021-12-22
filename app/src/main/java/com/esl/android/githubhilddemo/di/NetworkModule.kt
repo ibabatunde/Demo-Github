@@ -1,6 +1,6 @@
 package com.esl.android.githubhilddemo.di
 
-import com.esl.android.githubhilddemo.network.APiService
+import com.esl.android.githubhilddemo.network.ApiService
 import com.esl.android.githubhilddemo.utility.NetworkConstants
 import dagger.Module
 import dagger.Provides
@@ -56,7 +56,7 @@ object NetworkModule {
     }
 
     @Provides
-    fun providesApiService(retrofit: Retrofit): APiService {
-        return retrofit.create(APiService::class.java)
+    fun providesApiService(retrofit: Retrofit): ApiService {
+        return retrofit.create(ApiService::class.java)
     }
 }
